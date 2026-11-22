@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SAMI | Portfolio</title>
+<meta name="description" content="SAMI. Portfolio.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Crect%20width%3D%27100%27%20height%3D%27100%27%20rx%3D%2718%27%20fill%3D%27black%27/%3E%3Cpolygon%20points%3D%2750%2C36%2054%2C26%2057%2C33%2062%2C32%2078%2C24%2095%2C36%2088%2C42%2084%2C54%2076%2C48%2070%2C58%2062%2C50%2056%2C66%2050%2C74%2044%2C66%2038%2C50%2030%2C58%2024%2C48%2016%2C54%2012%2C42%205%2C36%2022%2C24%2038%2C32%2043%2C33%2046%2C26%27%20fill%3D%27white%27/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAACgklEQVR42u1Vv+oiMRCebBYVXSxsBEvrXcRiQRC1VQSt9iV8FLG0EbETbBTRRsFH8A2ELbQRGytB2ZjkipFcbvWnv7vzqnOqZPLNvy+ZCcBH/kchhBiG8btWhmEQQl7jKKVqEQqjtvd63epZ4qZpAkA6nbZtWxk/qUY/tW07nU4DgGmaD0pRuFqtttvtgiAYDAaO46DSNE1KaaVSSSQS8Xi8XC5TSjEbAHAcZzAYBEGw2+1qtdqDKjFgNBptt9tSE8bYeDwuFAoI832/VCrl8/nNZoOaQqEwHo8ZY7pVu92ORqPK7S1ULpdbr9dSSs4551xKeb1elc1qter1elLKfr/f6XSklL1eb7VaKQCCle16vc7lcjfnhBDXdREXBIGeixBCDyOEOJ/Pp9NJCKG71re6E9d1CSFgGEYkEmm1WpfLhXMeQqswIR4YY/euEcw5v1wurVYrEoncbgLJ8jwPywwlHrK/d6qXghR5nvfzDnCF79f3fQVSjhSzIdH1CMbkfN/HhsAABgBIKXGzWCwIIUKI0WiEes75V62AeowBAKPRSAhBCFksFpg06n9p4Hq9fjgcqtUqAMxmM8xuPp8vl0udN2RjuVzO53PUzGYzAKhWq4fDoV6vf9nSlmVlMhnMLpvNSimn0ymltNls6g8XF81mk1I6nU6llNlsFqvMZDKWZb0eR8hYo9GIxWIAkEwm9/u9zvt+v08mkwAQi8UajYZ+kd+do+oN4EjodrtCCMYYY0wI0e121ZEO/u5M1UvBvLAZr9cr8uO6bgjwV4IuhsMh3sFkMrkf2m/4gizL2m63x+MxlUr92af0uohisYiP+A20PKwjtHi/PP/gPvKRfyQ/AGbUc7oA0+ksAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAOUklEQVR42u2dbWgUVxfH78xs4lqjC4kJsSomEdImtqmlRK0kqZYWlBL6Sq20JU1NoVKwFtpqAyL4QRChBW1rQazgS0ujbZd8aFQUWio2JKFRN7tgJGqNGEzS2CS0utmdmefD6XOfeXZ2J7M7s7uzk//vU152Z+ae+59zzr33zB3GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMWITMn1IURUEQGGOKoqiqij4w6h5BEEWRMaaqqqIoLm+tJEkxv5JQgF4Welu5v7VVVVUnT55saWnJy8uDRIxlkZeX19LScvLkyaqqKtcaird28+bNExMTqqqqqtrX19fc3Jyfn595iSR1okxeFTdUfn5+c3NzX18f2WpiYmLz5s1ucyGCIHg8HsZYSUlJW1sbNTUSiUSjUfo5EAhkSyLO9BYki0AgQPaJRqORSIR+bmtrKy0tZYx5PJ6ctxIlU4yx9evX//HHHyQLykNVVZVlOSsSIb3ya5u2CWntCWNZyLJMPyuKQhK5detWY2NjzrsQchizZs369NNPucNQdWRYImTQPXv21NXV8bGAwaiqrq5uz5496egJk7LQwg24b98+r9fLjZxjDoOMvnz58u7ublJA3NaakYiNN64gCIIgFBQUhMPhffv2GRuX/rV///5wOFxQUEDftTfUmpeF1lD0gd7e3traWq21c8ZhMMY++OCDe/fuJXIYWZEIXdumTZtUVR0cHJwzZ06ifJP+OHv2bIqGmzZtsuU2tSILvQuZmpr66KOPYszu9Nxz4cKF7e3tvM1qksRIZMuWLfPmzbNFIhQpenp66OCvvfZaIrPSiV5++WX6ZE9Pj3EMSkoW8+bN27JlS2qy0FqJsrdTp06Vl5c7Opfn4fPFF18cGhqKyT1TQCuRa9eubd261aJE6AobGhr4nffzzz9rs2Z9Kn3q1Cn+4YaGhtQyjxhZbN269dq1a1ZkweFZ6ujo6MaNGx2apVLj58yZ8+WXX6bsMNItEbLaiRMnuHAVRVm+fLneoKSMysrKqakp3gEnTpxI1vTpk4UWbp/Dhw/7fD4HDXR5NrRq1arLly/TtVpxGGmSCF1keXl5OBwmWVCX79+/Xx9Z6Nfdu3drZRQOh8l7mwkumZGF1oWQfa5cufL0008zzaJM9nPPTz75ZGpqKqncM8MSielvMqiqqsPDw3QQ/nUalcyePfvmzZt0Uv6V3bt3T5v6ZVgWcQe6u3btomvITpbKx+jl5eVnzpzhnaemH2OJxE3K6C8FBQWUDPHrpOM0NTVp7Ug6e/7557Uem74yNDRUUFAQd4BDBsmWLPRZ6vnz56urq7OQpfK4++abb46OjlrPPe2VCL99uVaoz5qammKSIfr5/Pnz2mBBrWtvb+ehJ66SuBpinFa2ZKF3IVlYjiFD+3y+w4cP25t7WpdIa2vrmjVriouL415zZ2cnj83aaC3LMk9L9amJVhyKonR2dsZ118XFxWvWrGltbc2uLPRZaoaWY3iRTkNDw5UrV9KUe1qUiKqqY2NjXV1dBw8ebGlpqa2tLSoqYoytWLEibuCLSUup13fu3Bk3f6Kvr1ixgjFWVFRUW1vb0tJy8ODBrq6usbExbcdkURb6gW7al2PIaqIo7tq1y2ChJLsSiUQi+l4ZGRk5e/YsrX3r/6tPS/Pz8+nu13+Y/tLX13f27NmRkRGTF5Bd0rscw3PPhx566JdffuGuWHUqFDsikYjJTIi8TnNzM7W3sbHRZKykW5PKD5zgQTO9HMO90DvvvENFOk5zGCa1YqBm0kFXVxfZy+/3x6SicaOYk9WQieUYUkZRUdG3336b9dwz3feWqqo1NTWFhYX//PNPTCrqpmbql2OMBGAQTRRFefbZZ9vb2+vr62VZzv6kW9qQZVkUxfHx8cWLF7/wwguyLLuympfGE7IsV1ZWvvHGGzdv3gwEAilOiu/du9fdDiMmLb1z587g4CD/1cXwDj127JjX6010zyeMOrROPT4+Tms57oZuqZKSEu2vruf+/fsXLlyIRqOpOA/GWE1NzcDAQC7moan5D9f7DN6Vd+7ceeqpp1K/EyibXbBgwa+//jpD9DFDlHHp0qXKykp7Bixer/ebb77JyhoKsH3C9KeffqIZv2mVMU1OrqqqKIqRSOT777/3er1URqWqKh5Qyy2o1yRJ+uqrr15//fVwOCxJkizLdk6SvvfeezNk/OK+WRxVVT/88MO0VKvzhe/GxsbJyUmkILk1av37779feeWV9K7Nkj4ef/zxGzduQB+5kn4ODg6uWrUqE4VhdIIHH3zwt99+Q3xxvjK6u7sXLVqUuZJByj8eeOABejDaySu0MzzP+PHHH+nBrYwWk/LCnyNHjujLq0DW8wxFUY4dO2axDF2wEl+i0WhNTc2lS5cwuHXawFUQhMcee+zy5cvUTSm6gJSvIBqNCoIQDAZDoRAt4aJXnICiKIIghEKhYDAoCELKyrAkDko+ZFn2+/10TegYh4iDSpasFx5YEoeqqoyxH374gbl7O7OcgjqCOkW1tlmjpUSB8gxBEAKBQHV1taIobq0GyiG3IYpiKBR69NFHSRlW9GHVc0iSpCgKIovTYoqiKJIkWfQcVm90RBa3xhRmfQdjRBa3xhR7PIeVyELFV+hXWyxjb0yxQRxWIgvVfMPTxO8YURRFMamSC3tjij3ioKcWent7L168aH42LBqNSpI0MDBw9epVJLN6B3D16tWBgQFJkkzOYtHc18WLF3t7ewVBsKWQx567liJLW1ubmW4mh+nxeE6fPr1y5Ura1EDF6xP+3xM3NTWtXLny9OnTHo/HTIihD7S1tVFMcZYPZIxVV1fTM1UGdaZ8iW7nzp08nz169Kj11f9ptzrNzFqoxWsgIxw9epQbhx75N7YP2VyWZdqwxXGRmlpCuzgmagbfEWDdunXUBtpcpaSkZHR01IplHVX2nPLFUAf/9ddfCxYsoNJM6uZ169bdunXLoLqKDN7T08Oc+dANVQy0traqCXa2IJN1dHQsXLiQ/f82S4yxd999N2XnQd/q7+8/dOhQtupL6KSHDh3q7++32JD3339fm9rzrV07OjrUBFsckMFbW1uZM3erNYgs1GZZlnfs2KHNq7nLoVuENsJO1qz0+aGhoYqKisLCQv2OPJlxFbTdYGFhYUVFBe08llpDgsGgfmczbq4dO3aQMrQHd3pMMYgsJOrr16+vXbuWJSh9psY/+eSTapK7BXFlLFu2jA7e0dGR+eIjuuaOjg5q2rJly1LQB334mWeeiTsjwO22du3a69eva92z02NK3MjCQ4nf76fHUA08HpmD4oLJumWuDLpjZs2axRjbsGFD5itb6XQbNmzgl1FdXZ2UPuhj3333nfFcEX9zjd/v5yHG6TFFH1l4KNm+fbs+lCSa8ykuLv7zzz/NZKYxyuAV93Pnzh0eHs5kiso3jpo7dy7TPMNhXh/Ux5OTk4sXL562qo+bcfv27TzEOD2maCMLZQ8DAwMGoSRRs+mVBsYG1StDe2MdOHAgk49N0IkOHDigvxKT+qAjfPzxxyZvfW2Iocfcu7u7mfM3B+C78Z07d27+/PlJOTr+XN2FCxcMDJpIGVxeq1evzuSYhU60evXqGO/I9XH79m2D5lDwDQaDeXl5SW0oS8efP3/+uXPnaNIoB96qwRijbX5Z8ov49Pknnngi0b5bBsrgFyCKIr2tIgP6oFMEAgFejq9vTkVFRTAYTOTMjPNQM+biBs+lGu/UrpUaTG9fiLnbplUG/+O2bdsyE1noFNu2bUt0PdSc0tLSuPowmYfabuQsyyLli6aAWlRUNDw8rM1MzSiDZ2RlZWUZmPDg0xtlZWUGyWAifVAeOjExYSYPTZO1cw+y5ttvv81NaVIZWn1kYMKDT29MO0yIq4/cGII6Vh+0J244HDavDD6szcCEB5/e0L5Gw6Q+qFH9/f20XxseCUtaHDU1Nffv31dV9fbt2yaVwcNwuic89NMbJhtVWlrK3zO9fv16htrblEfFX3zxxd27dx9++OGkfG8GJjziTm+Y18eNGzcoHkEZqedZJSUlVVVVyRqRPlxXV5e+AS0dtq6uLrVrW7JkyZIlS1y872+mJ+aTFZYkSaFQKB36oAOGQiGatko2Y8iVDEN0vv8QRTHZClOqiZdl+fjx4ywNBap0wOPHj9PzqMnWOKqqisrq7DubpUuX0us/bUxL6WhTU1NLly5lDl/rAsb6oPcT2jimpUOdOXPG9coQXS+OI0eOpOPgdFi4jRwe7zDGfD4fvXLLlshCBxkZGaH3Bbh78srNwqe0dHx8nB7VtOU5HzqI3+8fHx+35ZFDkDVoUqG+vt6uAS0dpL6+HvNXbogsNk54WJzeQFhxYmSxa8LD4vQGcO2EB6Y3XD7hYaXCg6o3ZsL0xkwJKzETHhazBEEQML3hzrTU5/ONjo6m9jptqhEfGxvz+Xwzqyxv5oxpN27cmFqFB32FXmmOEaxr9UF17Unpgz789ddfQxluDi6SJOXn5//+++/JPsUaCAS8Xm9SDx2BnMxMKysrJycn+XPexsPXaDR67969Rx55BG7D/VC956uvvmomuGhTDTw9MIP08dlnnxnrQ5tqQBkzKPnweDwej6ezszNR8oFUY6YnH2VlZXfv3tVvB4JUAyNbiTH20ksvqbrXsCPVAP92/N69e7XJB1IN8L+ZD/bfh3Jp/ySkGuB/yYcgCIsWLaJdcpFqgDjJx3PPPUdh5a233kJAAbHJx+eff057+0MZ/4ZdmID9d02fHlGMRCIMb3EAACTnP2AHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsJX/AI4qhewb3+ZvAAAAAElFTkSuQmCC">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SAMI">
+<meta property="og:title" content="SAMI | Portfolio">
+<meta property="og:description" content="The portfolio of SAMI.">
+<meta property="og:image" content="https://i.ibb.co.com/yBYpGD37/1795311618861.jpg">
+<meta property="og:image:alt" content="Batman in the rain">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SAMI | Portfolio">
+<meta name="twitter:description" content="The portfolio of SAMI.">
+<meta name="twitter:image" content="https://i.ibb.co.com/yBYpGD37/1795311618861.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#050608;
+    --ink:#e9ecef;
+    --white:#fff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;background:var(--black);color:var(--ink);overflow:hidden}
+  body{font-family:"Oswald","Arial Narrow",Arial,sans-serif}
+
+  .hero{position:relative;width:100%;height:100%;overflow:hidden;background:var(--black)}
+
+  /* Blinking eyes: two stacked images, closed one toggles instantly */
+  .hero-img{filter:grayscale(1) contrast(1.05);position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;user-select:none;-webkit-user-drag:none}
+  #eyesClosed{opacity:0}
+  #eyesClosed.on{opacity:1}
+
+  /* Effect layers */
+  canvas.fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  #flash{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 0%,#fff 0%,#aaa 40%,transparent 80%);opacity:0;mix-blend-mode:screen}
+  .shade{position:absolute;inset:0;pointer-events:none;
+    background:
+      linear-gradient(to bottom,rgba(0,0,0,.55) 0,rgba(0,0,0,0) 22%),
+      linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 38%)}
+
+  /* UI */
+  header{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;justify-content:space-between;
+    padding:calc(env(safe-area-inset-top,0px) + 22px) clamp(18px,4vw,56px) 0}
+  .logo{font-family:"Oswald",Arial,sans-serif;font-weight:400;font-size:clamp(22px,2.6vw,30px);letter-spacing:.42em;color:var(--white);text-decoration:none;line-height:1}
+  nav{display:flex;gap:10px;align-items:center}
+  .btn{font-family:"Oswald",sans-serif;font-weight:300;font-size:13px;letter-spacing:.28em;text-transform:uppercase;text-decoration:none;
+    color:var(--white);padding:12px 26px;border:1px solid var(--white);background:transparent;cursor:pointer;transition:color .2s,background .2s}
+  .btn:hover{color:#000;background:var(--white)}
+  .btn:focus-visible{outline:1px solid var(--white);outline-offset:4px}
+  .btn.primary{background:var(--white);color:#000}
+  .btn.primary:hover{background:transparent;color:var(--white)}
+
+  .hero-copy{position:absolute;z-index:5;left:0;right:0;bottom:0;text-align:center;
+    padding:0 20px calc(env(safe-area-inset-bottom,0px) + clamp(28px,7vh,72px))}
+  .cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+  @media (max-width:640px){
+    nav .btn.link{display:none}
+    .btn{font-size:14px;padding:10px 18px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    #flash{display:none}
+  }
+</style>
+</head>
+<body>
+<main class="hero" id="hero">
+  <img class="hero-img" id="eyesOpen" alt="Batman with eyes open" src="https://i.ibb.co.com/yBYpGD37/1795311618861.jpg">
+  <img class="hero-img" id="eyesClosed" alt="" aria-hidden="true" src="https://i.ibb.co.com/MyVdr1ky/1795311676822.jpg">
+
+  <div id="flash"></div>
+  <canvas class="fx" id="bolt"></canvas>
+  <canvas class="fx" id="bats"></canvas>
+  <canvas class="fx" id="rain"></canvas>
+  <div class="shade"></div>
+
+  <header>
+    <a class="logo" href="#" aria-label="SAMI home">SAMI</a>
+    <nav>
+      <a class="btn link" href="#work">Work</a>
+      <a class="btn link" href="#about">About</a>
+      <a class="btn" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero-copy">
+    <div class="cta">
+      <a class="btn primary" href="#work">View my work</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  /* ---------- Blink ---------- */
+  var closed = document.getElementById('eyesClosed');
+  function setClosed(v){ closed.classList.toggle('on', v); }
+  function blink(){
+    setClosed(true);
+    setTimeout(function(){
+      setClosed(false);
+      if(Math.random() < 0.25){            // occasional double blink
+        setTimeout(function(){
+          setClosed(true);
+          setTimeout(function(){ setClosed(false); }, 130);
+        }, 150);
+      }
+    }, 140);
+    setTimeout(blink, 2800 + Math.random()*3800);
+  }
+  setTimeout(blink, 2200);
+
+  /* ---------- Helpers ---------- */
+  var DPR = Math.min(window.devicePixelRatio || 1, 2);
+  var W = 0, H = 0;
+  var cvs = {
+    rain: document.getElementById('rain'),
+    bats: document.getElementById('bats'),
+    bolt: document.getElementById('bolt')
+  };
+  var ctx = {};
+  for(var k in cvs){ ctx[k] = cvs[k].getContext('2d'); }
+  function resize(){
+    W = window.innerWidth; H = window.innerHeight;
+    for(var k in cvs){
+      cvs[k].width = W*DPR; cvs[k].height = H*DPR;
+      ctx[k].setTransform(DPR,0,0,DPR,0,0);
+    }
+  }
+  window.addEventListener('resize', resize); resize();
+
+  /* ---------- Black water rain ---------- */
+  var drops = [];
+  var count = function(){ return Math.round(Math.min(260, W*H/6500)); };
+  function newDrop(initial){
+    var depth = Math.random();                     // 0 far, 1 near
+    return {
+      x: Math.random()*(W+200) - 100,
+      y: initial ? Math.random()*H : -60 - Math.random()*200,
+      len: 16 + depth*46,
+      speed: 650 + depth*900,
+      w: 0.8 + depth*1.8,
+      a: 0.35 + depth*0.55
+    };
+  }
+  for(var i=0;i<count();i++) drops.push(newDrop(true));
+  var WIND = 0.16;                                  // slight lean
+  var rc = ctx.rain;
+  function drawRain(dt){
+    rc.clearRect(0,0,W,H);
+    while(drops.length < count()) drops.push(newDrop(false));
+    for(var i=0;i<drops.length;i++){
+      var d = drops[i];
+      d.y += d.speed*dt; d.x -= d.speed*dt*WIND;
+      if(d.y - d.len > H || d.x < -120){ drops[i] = newDrop(false); continue; }
+      var x2 = d.x + d.len*WIND, y2 = d.y - d.len;
+      // soft glossy halo so black water reads on dark image
+      rc.strokeStyle = 'rgba(210,210,210,' + (d.a*0.28) + ')';
+      rc.lineWidth = d.w + 1.6;
+      rc.lineCap = 'round';
+      rc.beginPath(); rc.moveTo(d.x,d.y); rc.lineTo(x2,y2); rc.stroke();
+      // black core
+      var g = rc.createLinearGradient(d.x,d.y,x2,y2);
+      g.addColorStop(0,'rgba(0,0,0,' + d.a + ')');
+      g.addColorStop(1,'rgba(0,0,0,0)');
+      rc.strokeStyle = g; rc.lineWidth = d.w;
+      rc.beginPath(); rc.moveTo(d.x,d.y); rc.lineTo(x2,y2); rc.stroke();
+    }
+  }
+
+  /* ---------- Flying bats ---------- */
+  var bats = [];
+  function spawnBat(){
+    var fromLeft = Math.random() < 0.5;
+    var s = 0.35 + Math.random()*1.1;
+    bats.push({
+      x: fromLeft ? -80 : W+80,
+      y: H*(0.08 + Math.random()*0.5),
+      vx: (fromLeft?1:-1)*(90 + Math.random()*170)*(0.6+s*0.5),
+      vy: -10 + Math.random()*20,
+      s: s, ph: Math.random()*6.28, sp: 9 + Math.random()*5,
+      wob: Math.random()*6.28
+    });
+  }
+  function drawBat(c,b,t){
+    var flap = Math.sin(t*b.sp + b.ph);               // -1..1
+    var up = flap*0.9;
+    var dir = b.vx>0 ? 1 : -1;
+    c.save();
+    c.translate(b.x,b.y);
+    c.scale(b.s*dir,b.s);
+    c.fillStyle = 'rgba(2,2,4,0.92)';
+    // body
+    c.beginPath(); c.ellipse(0,0,6,10,0,0,6.28); c.fill();
+    c.beginPath(); c.moveTo(-4,-8); c.lineTo(-3,-15); c.lineTo(0,-10); c.lineTo(3,-15); c.lineTo(4,-8); c.fill();
+    // wings (mirrored)
+    for(var m=-1;m<=1;m+=2){
+      c.save(); c.scale(m,1);
+      c.beginPath();
+      c.moveTo(4,-3);
+      c.quadraticCurveTo(22,-18-up*22,46,-10-up*30);
+      c.quadraticCurveTo(38,-4-up*18,34,2-up*12);
+      c.quadraticCurveTo(28,-2-up*8,22,6-up*6);
+      c.quadraticCurveTo(15,2-up*3,10,10);
+      c.quadraticCurveTo(7,6,4,8);
+      c.closePath(); c.fill();
+      c.restore();
+    }
+    c.restore();
+  }
+  var nextBat = 0;
+  function drawBats(dt,t){
+    var c = ctx.bats; c.clearRect(0,0,W,H);
+    nextBat -= dt;
+    if(nextBat <= 0 && bats.length < 7){
+      var n = 1 + (Math.random()<0.3 ? 2 : 0);
+      for(var i=0;i<n;i++) spawnBat();
+      nextBat = 2 + Math.random()*4;
+    }
+    for(var i=bats.length-1;i>=0;i--){
+      var b = bats[i];
+      b.x += b.vx*dt;
+      b.y += (b.vy + Math.sin(t*2 + b.wob)*28)*dt;
+      if(b.x < -140 || b.x > W+140){ bats.splice(i,1); continue; }
+      drawBat(c,b,t);
+    }
+  }
+
+  /* ---------- Lightning ---------- */
+  var flash = document.getElementById('flash');
+  var bc = ctx.bolt;
+  var boltPaths = [], boltLife = 0;
+  function makeBolt(x,y,ang,len,w,out){
+    var pts = [[x,y]], segs = Math.max(6, Math.floor(len/28));
+    for(var i=0;i<segs;i++){
+      ang += (Math.random()-0.5)*0.9;
+      x += Math.sin(ang)*len/segs; y += Math.cos(ang)*len/segs;
+      pts.push([x,y]);
+      if(w>1.4 && Math.random()<0.16){
+        makeBolt(x,y,ang+(Math.random()<0.5?-1:1)*(0.5+Math.random()*0.6),len*0.4,w*0.55,out);
+      }
+    }
+    out.push({pts:pts,w:w});
+  }
+  function strike(){
+    boltPaths = [];
+    makeBolt(W*(0.1+Math.random()*0.8), -10, (Math.random()-0.5)*0.4, H*(0.55+Math.random()*0.3), 3.2, boltPaths);
+    boltLife = 1;
+    var seq = [0.85,0.15,0.6,0.1,0.25,0];
+    var i = 0;
+    (function step(){
+      flash.style.opacity = seq[i];
+      i++;
+      if(i < seq.length) setTimeout(step, 55 + Math.random()*60);
+    })();
+    setTimeout(strike, 5500 + Math.random()*9000);
+  }
+  setTimeout(strike, 3500);
+  function drawBolt(dt){
+    bc.clearRect(0,0,W,H);
+    if(boltLife <= 0) return;
+    boltLife -= dt*3.2;
+    var a = Math.max(0, boltLife);
+    bc.lineJoin = 'round'; bc.lineCap = 'round';
+    boltPaths.forEach(function(p){
+      bc.beginPath();
+      p.pts.forEach(function(q,i){ i ? bc.lineTo(q[0],q[1]) : bc.moveTo(q[0],q[1]); });
+      bc.strokeStyle = 'rgba(255,255,255,' + (a*0.35) + ')'; bc.lineWidth = p.w*5; bc.stroke();
+      bc.strokeStyle = 'rgba(255,255,255,' + a + ')'; bc.lineWidth = p.w; bc.stroke();
+    });
+  }
+
+  /* ---------- Loop ---------- */
+  var last = performance.now();
+  function frame(now){
+    var dt = Math.min(0.05,(now-last)/1000); last = now;
+    drawBolt(dt); drawBats(dt, now/1000); drawRain(dt);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
